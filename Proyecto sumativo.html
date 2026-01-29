@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selena Quintanilla | Proyecto Sumativo</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #ffd166;
+      --mint: #06d6a0;
+      --pink: #ef476f;
+      --purple: #9b51e0;
+      --neon-pink: #ff007f;
+      --neon-green: #00ffcc;
+      --glass: rgba(18, 18, 18, 0.9);
+      --neon-border: linear-gradient(45deg, var(--pink), var(--purple), var(--neon-green), var(--gold));
+    }
+
+    body {
+      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url("https://i0.wp.com/www.adiario.mx/wp-content/uploads/2021/09/danny-howe-bn-D2bCvpik-unsplash-scaled.jpg?resize=1024%2C683&ssl=1");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #ffffff;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.95);
+      padding: 30px 10%;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      margin: 0;
+      color: var(--neon-pink);
+      text-shadow: 0 0 15px rgba(255, 0, 127, 0.8);
+      text-transform: uppercase;
+    }
+
+    nav { margin-top: 20px; }
+    nav a {
+      margin: 0 20px;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    /* EFECTO DE BRILLO AL SELECCIONAR/PASAR MOUSE */
+    nav a:hover {
+      text-shadow: 0 0 15px currentColor, 0 0 30px currentColor;
+      transform: translateY(-2px);
+    }
+
+    /* HERO SECTION - RECTANGULAR OTRA VEZ */
+    .hero {
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
+    }
+
+    .hero-img {
+      width: 350px; /* Rectangular */
+      height: auto;
+      border-radius: 20px; /* Bordes suavizados */
+      border: 4px solid var(--neon-green);
+      box-shadow: 0 0 25px var(--neon-green);
+      transition: 0.5s;
+    }
+
+    .hero-img:hover {
+      transform: scale(1.05);
+    }
+
+    .principal-grid {
+      max-width: 1000px;
+      margin: 0 auto 60px;
+      background: var(--glass);
+      padding: 60px 40px;
+      border-radius: 20px;
+      border: 3px solid transparent;
+      background-image: linear-gradient(var(--glass), var(--glass)), var(--neon-border);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      box-shadow: 0 0 40px rgba(0, 255, 204, 0.2);
+    }
+
+    .texto {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+
+    .texto h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .imagenes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+
+    .img-small {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 3px solid var(--neon-green);
+      box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+      transition: 0.4s;
+    }
+
+    .img-small:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px var(--neon-green);
+    }
+
+    .video-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    video {
+      width: 100%;
+      max-width: 750px;
+      border-radius: 20px;
+      border: 3px solid var(--neon-green);
+      box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 40px;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Selena Quintanilla</h1>
+    <nav>
+      <a href="Principal.html" style="color: var(--gold);">Principal</a>
+      <a href="biografia.html" style="color: var(--mint);">Biografía</a>
+      <a href="logros.html" style="color: var(--pink);">Logros</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img
+        src="https://qpwebsite.s3.amazonaws.com/uploads/2025/03/rss-efe764a35fb38c521e75ef1d1d2882a76c6ab822949w.jpg"
+        alt="Selena Quintanilla"
+        class="hero-img"
+      >
+    </section>
+
+    <div class="principal-grid">
+      <section class="texto">
+        <h2>Una artista llena de alegría</h2>
+        <p>
+          Selena Quintanilla es una artista llena de alegría, carisma y amor por la música. 
+          Siempre se mostró cercana y agradecida con sus fans, dejando un legado que trasciende generaciones.
+        </p>
+        <p>
+          En sus conciertos transmitía una energía inigualable, fusionando ritmos con una emoción que conectaba directamente con el corazón de su público.
+        </p>
+      </section>
+
+      <section class="imagenes">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrbc3Z2Pyk9oYjGVVOn4COcN5t1tY3uIfG6w&s" alt="Selena" class="img-small">
+        <img src="https://m.media-amazon.com/images/M/MV5BOTk4MjQwODE5OF5BMl5BanBnXkFtZTcwOTY1MDEzOA@@._V1_FMjpg_UX1000_.jpg" alt="Selena 2" class="img-small">
+        <img src="https://www.tshaonline.org/images/handbook/entries/PP/perez-selena.jpg" alt="Selena sonriendo" class="img-small">
+      </section>
+
+      <section class="video-container">
+        <h3 style="margin-bottom: 30px; color: var(--gold); font-family: 'Playfair Display', serif; font-size: 1.8rem;">Presentación Especial</h3>
+        <video controls>
+          <source src="Videoselena.mp4" type="video/mp4">
+          Tu navegador no soporta videos.
+        </video>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 SUMATIVA CODING | Sophie Ruiz y Salomé Pullas</p>
+  </footer>
+
+</body>
+</html>

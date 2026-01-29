@@ -1,0 +1,54 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* BODY GENERAL */
+body {
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* NAV */
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+/* CONTENIDO PRINCIPAL (CAJA CENTRAL) */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+/* PÁRRAFOS */
+main p {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+/* FOOTER */
+footer {
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 12px;
+  margin-top: 40px;
+  font-size: 13px;
+}

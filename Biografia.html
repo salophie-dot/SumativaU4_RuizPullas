@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biografía | Selena Quintanilla</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: hwb(42 40% 0%);
+      --mint: #06d6a0;
+      --pink: #ef476f;
+      --purple: #9b51e0;
+      --neon-green: #00ffcc; 
+      --glass: rgba(18, 18, 18, 0.9);
+      --neon-border: linear-gradient(45deg, var(--pink), var(--purple), var(--neon-green), var(--gold));
+    }
+
+    body {
+      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url("https://i0.wp.com/www.adiario.mx/wp-content/uploads/2021/09/danny-howe-bn-D2bCvpik-unsplash-scaled.jpg?resize=1024%2C683&ssl=1");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.95);
+      padding: 30px 10%;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      margin: 0;
+      color: var(--neon-green);
+      text-transform: uppercase;
+      text-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green);
+    }
+
+    nav { margin-top: 20px; }
+    nav a {
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      transition: 0.4s ease;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      text-shadow: 0 0 15px currentColor;
+      transform: translateY(-3px);
+    }
+
+    main {
+      max-width: 850px;
+      margin: 50px auto;
+      background: var(--glass);
+      padding: 60px;
+      border-radius: 20px;
+      position: relative;
+      border: 3px solid transparent;
+      background-image: linear-gradient(var(--glass), var(--glass)), var(--neon-border);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      box-shadow: 0 0 40px rgba(0, 255, 204, 0.2);
+    }
+
+    .bio-text p {
+      text-align: justify;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .img-intermedia {
+      display: block;
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      margin: 40px auto;
+      border-radius: 50%;
+      border: 4px solid var(--neon-green);
+      box-shadow: 0 0 20px var(--neon-green);
+      transition: 0.5s ease;
+    }
+
+    .img-intermedia:hover {
+      transform: translateY(-15px) scale(1.05);
+      box-shadow: 0 15px 35px var(--neon-green);
+    }
+
+    .merch-title {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--gold);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(255, 209, 102, 0.4);
+    }
+
+    .productos {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      flex-wrap: wrap; /* Para que se ajusten si la pantalla es chica */
+    }
+
+    /* TAMAÑO CAMBIADO A 220px */
+    .img-merch {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 3px solid var(--neon-green);
+      box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+      transition: 0.5s ease;
+    }
+
+    .img-merch:hover { 
+      transform: translateY(-12px); 
+      box-shadow: 0 12px 25px var(--neon-green);
+    }
+
+    .btn-container { text-align: center; margin-top: 50px; }
+    .btn-back {
+      display: inline-block;
+      background: var(--neon-green);
+      color: #000;
+      text-decoration: none;
+      padding: 15px 45px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+      box-shadow: 0 0 20px var(--neon-green);
+      transition: 0.3s ease;
+    }
+
+    .btn-back:hover {
+      transform: scale(1.1) translateY(-3px);
+      box-shadow: 0 0 40px var(--neon-green);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #000;
+      margin-top: 80px;
+      color: rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>BIOGRAFÍA</h1>
+    <nav>
+      <a href="Principal.html" style="color: var(--gold);">Principal</a>
+      <a href="biografia.html" style="color: var(--mint);">Biografía</a>
+      <a href="logros.html" style="color: var(--pink);">Logros</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="bio-text">
+
+      <p>Selena Quintanilla es una cantante que sigue conquistando a las personas no solo por su voz, sino también por su personalidad sencilla y cercana. Desde joven descubrió que la música era su pasión y que cantar le permitía conectar con los demás. Con el apoyo de su familia, empezó a presentarse en eventos pequeños, donde aprendió a perder el miedo al escenario y a disfrutar cada momento frente al público. Desde entonces, Selena ha crecido sin olvidar de dónde viene.</p>
+
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQgZF0AHff7BFU8GwwVSK3M11a3Z_w-rJZbw&s" class="img-intermedia">
+
+      <p>Hoy en día, sus conciertos son espacios llenos de energía, baile y emoción. A Selena le encanta ver a la gente cantar con ella, sonreír y sentirse feliz por un rato. Siempre agradece a quienes compran una entrada para verla, porque sabe que el público es quien hace posible su carrera. En el escenario no solo canta, también habla con sus fans y les hace sentir que forman parte de algo especial. Además de la música, Selena también se interesa por lo que ofrece a su público fuera del escenario. Participa en la venta de discos, camisetas y recuerdos que representan su estilo y su identidad. Para ella, cada producto tiene un valor sentimental, por eso piensa en la calidad y en lo que sus fans realmente quieren. No ve a las personas solo como compradores, sino como gente que confía en ella y la apoya.</p>
+
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuGcJAXIC-6NeRrTo4ZYRRfPQsY-DaZ9V8Q&s" class="img-intermedia">
+
+      <p>Entre los puntos más importantes de Selena como cliente principal están su cercanía con el público, su responsabilidad y su pasión por lo que hace. Escucha a sus fans, valora su apoyo y siempre busca mejorar. Selena es una artista trabajadora, alegre y auténtica, que disfruta compartir su talento y crecer junto a las personas que la siguen día a día.</p>
+    </div>
+
+    <h3 class="merch-title">Colección de Recuerdos</h3>
+
+    <div class="productos">
+      <img src="https://i5.walmartimages.com/asr/1d282e25-b701-4086-b6b5-fd9974998367.80f4902004f9ffc707eab76175840423.jpeg" class="img-merch">
+      <img src="https://i.pinimg.com/736x/95/6a/a2/956aa2f42100cee042cdc54fd18d6c2d.jpg" class="img-merch">
+      <img src="https://i.ebayimg.com/images/g/NnAAAeSwnW5pRI8P/s-l1200.webp" class="img-merch">
+    </div>
+
+    <div class="btn-container">
+      <a href="Proyecto sumativo.html" class="btn-back">Regresar al Inicio</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>SUMATIVA CODING - Sophie Ruiz y Salomé Pullas</p>
+  </footer>
+
+</body>
+</html>
